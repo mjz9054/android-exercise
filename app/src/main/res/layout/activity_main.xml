@@ -2,86 +2,89 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical" >
+    android:paddingRight="16dp">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center_vertical"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="@string/main_page_description"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/main_page_description"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_2" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_1" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_3" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_2" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_4" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_3" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_5" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_4" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_6" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_5" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_7" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_6" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_8" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_7" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_9" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_8" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/gray"
-            android:text="@string/button_10" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_9" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/button_10" />
 
-    </LinearLayout>
-
+        </LinearLayout>
+    </ScrollView>
 
 
 </FrameLayout>
