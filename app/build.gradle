@@ -1,6 +1,25 @@
 apply plugin: 'com.android.application'
 
+Properties props = new Properties()
+props.load(project.rootProject.file("local.properties").newDataInputStream())
+
 android {
+
+    signingConfigs {
+        release {
+            keyAlias 'release'
+            keyPassword props['release.keystore.keyPassword']
+            storeFile file(props['release.keystore'])
+            storePassword props['release.keystore.storePassword']
+        }
+        debug {
+            keyAlias 'debug'
+            keyPassword props['debug.keystore.keyPassword']
+            storeFile file(props['debug.keystore'])
+            storePassword props['debug.keystore.storePassword']
+        }
+    }
+
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
